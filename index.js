@@ -6,7 +6,8 @@ function distanceFromHqInBlocks(locationPickUp) {
 }
 
 function distanceFromHqInFeet(locationPickUp){
-    return distanceFromHqInBlocks(locationPickUp) * 264
+    let blocksToFeet = distanceFromHqInBlocks(locationPickUp) * 264
+    return blocksToFeet;
 
 }
 
@@ -14,7 +15,6 @@ function distanceTravelledInFeet(locationPickUp, endLocation){
     let pickUpInFeet = locationPickUp * 264;
     let endLocationInFeet = endLocation * 264
     return Math.abs(pickUpInFeet - endLocationInFeet)
-    return blocksToFeet;
 }
 
 function calculatesFarePrice(locationPickUp, endLocation){
